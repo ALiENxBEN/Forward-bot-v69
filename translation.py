@@ -11,15 +11,7 @@ import os
 from config import Config
 
 class Translation(object):
-  START_TXT = """Hey {}
-
-➻ I Am A Advanced Auto Forward Bot
-  
-➻ I Can Forward All Message From One Channel To Another Channel 
-  
-➻ Click Help Button To Know More About Me
-  
-<b>Bot Is Made By @Madflix_Bots</b>"""
+  START_TXT = """Made by ~ BEN10 AKA (@About_BEN)"""
 
 
   HELP_TXT = """<b><u>🛠️ Help</b></u>
@@ -51,13 +43,10 @@ class Translation(object):
 ► __Then Use /forward To Forward Messages__"""
   
   ABOUT_TXT = """<b>🤖 My Name :</b> {}
-<b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
-<b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
-<b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a>
-<b>📢 Channel :</b> <a href='https://t.me/Madflix_Bots'>Madflix Botz</a>
-<b>🧑‍💻 Developer :</b> <a href='https://t.me/CallAdminRobot'>Jishu Developer</a>
+<b>📢 Channel :</b> <a href='https://t.me/About_BEN'>BEN</a>
+<b>🧑‍💻 Developer :</b> <a href='https://t.me/About_BEN'>BEN</a>
 
-<b>♻️ Bot Made By :</b> @Madflix_Bots"""
+<b>♻️ Bot Made By :</b> @About_BEN"""
   
   STATUS_TXT = """<b><u>Bot Status</u></b>
   
