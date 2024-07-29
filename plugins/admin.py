@@ -46,7 +46,7 @@ async def get_stats(bot, message):
 async def donate(client, message):
 	text = "<b>🥲 Thanks For Showing Interest In Donation! ❤️</b> \n\nIf You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upto Your Choice. \n\n<b>🛍 UPI ID:</b> <code>madflixofficial@axl</code>"
 	keybord = InlineKeyboardMarkup([
-        			[InlineKeyboardButton("🦋 Admin",url = "https://t.me/CallAdminRobot"), 
+        			[InlineKeyboardButton("🙂 OWNER",url = "https://t.me/About_BEN"), 
         			InlineKeyboardButton("✖️ Close",callback_data = "close_btn") ]])
 	await message.reply_text(text = text,reply_markup = keybord)
 
