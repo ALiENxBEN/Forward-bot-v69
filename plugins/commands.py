@@ -37,16 +37,16 @@ async def start(client, message):
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id, user.first_name)
     reply_markup = InlineKeyboardMarkup(main_buttons)
-    jishubotz = await message.reply_sticker("AAMCBQADGQEAARqlUmaoG3pjrJDVlAKPngABSA4Ru3SccwACDgkAArBu-FaH8DUylfVPGwEAB20AAzUE")
+    # Replace the sticker with an image
+    jishubotz = await message.reply_photo("https://graph.org/file/f591f8fd90d4266ee325e.jpg")
     await asyncio.sleep(2)
     await jishubotz.delete()
-    text=Translation.START_TXT.format(user.mention)
+    text = Translation.START_TXT.format(user.mention)
     await message.reply_text(
         text=text,
         reply_markup=reply_markup,
         quote=True
     )
-
 
 
 #==================Restart Function==================#
