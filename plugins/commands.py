@@ -18,13 +18,13 @@ from pyrogram import Client, filters, enums, __version__ as pyrogram_version
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaDocument
 
 main_buttons = [[
-        InlineKeyboardButton('📢 Updates', url='https://t.me/Madflix_Bots'),
-        InlineKeyboardButton('💬 Support', url='https://t.me/MadflixBots_Support')
+        InlineKeyboardButton('😎 OWNER', url='https://t.me/ABOUT_ben'),
+        InlineKeyboardButton('🚄 SERVER', url='https://t.me/ABOUT_ben')
         ],[
         InlineKeyboardButton('🛠️ Help', callback_data='help'),
         InlineKeyboardButton('🩷 About', callback_data='about')
         ],[
-        InlineKeyboardButton('🧑‍💻 Developer 🧑‍💻', url='https://t.me/CallAdminRobot')
+        InlineKeyboardButton('🧑‍💻 Developer 🧑‍💻', url='https://t.me/About_BEN')
         ]]
 
 
@@ -37,7 +37,7 @@ async def start(client, message):
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id, user.first_name)
     reply_markup = InlineKeyboardMarkup(main_buttons)
-    jishubotz = await message.reply_sticker("CAACAgUAAxkBAAECEEBlLA-nYcsWmsNWgE8-xqIkriCWAgACJwEAAsiUZBTiPWKAkUSmmh4E")
+    jishubotz = await message.reply_sticker("AAMCBQADGQEAARqlUmaoG3pjrJDVlAKPngABSA4Ru3SccwACDgkAArBu-FaH8DUylfVPGwEAB20AAzUE")
     await asyncio.sleep(2)
     await jishubotz.delete()
     text=Translation.START_TXT.format(user.mention)
@@ -124,13 +124,3 @@ async def status(bot, query):
         disable_web_page_preview=True,
     )
     
-
-
-
-
-
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
