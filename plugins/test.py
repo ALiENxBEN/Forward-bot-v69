@@ -1,12 +1,3 @@
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
-
-
-
-
 import os
 import re 
 import sys
@@ -134,7 +125,7 @@ class CLIENT:
      user_id = int(message.from_user.id)
      text = "<b>⚠️ Disclaimer ⚠️</b>\n\nYou Can Use Your Session For Forward Message From Private Chat To Another Chat.\nPlease Add Your Pyrogram Session With Your Own Risk. Their Is A Chance To Ban Your Account. My Developer Is Not Responsible If Your Account May Get Banned."
      await bot.send_message(user_id, text=text)
-     msg = await bot.ask(chat_id=user_id, text="<b>Send your pyrogram session.\nget it from @mdsessiongenbot\n\n/cancel - cancel the process</b>")
+     msg = await bot.ask(chat_id=user_id, text="<b>Send your pyrogram session.\nget it from any session gen bot or using script\n\n/cancel - cancel the process</b>")
      if msg.text=='/cancel':
         return await msg.reply('Process Cancelled !')
      elif len(msg.text) < SESSION_STRING_SIZE:
@@ -237,13 +228,3 @@ def parse_buttons(text, markup=True):
        buttons = InlineKeyboardMarkup(buttons)
     return buttons if buttons else None
 
-
-
-
-
-
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
