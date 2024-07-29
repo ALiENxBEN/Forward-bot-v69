@@ -1,12 +1,3 @@
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
-
-
-
-
 import os
 import sys 
 import math
@@ -68,7 +59,7 @@ async def pub_(bot, message):
        return await stop(client, user)
     temp.forwardings += 1
     await db.add_frwd(user)
-    await send(client, user, "🩷 Forwarding Started")
+    await send(client, user, "🚨🔥 Forwarding Started😎🛡️")
     sts.add(time=True)
     sleep = 1 if _bot['is_bot'] else 10
     await msg_edit(m, "Processing...") 
@@ -122,7 +113,7 @@ async def pub_(bot, message):
             temp.IS_FRWD_CHAT.remove(sts.TO)
             return await stop(client, user)
         temp.IS_FRWD_CHAT.remove(sts.TO)
-        await send(client, user, "🎉 Forwarding Completed")
+        await send(client, user, "🌚 Forwarding Completed💦")
         await edit(m, 'Completed', "completed", sts) 
         await stop(client, user)
             
@@ -210,8 +201,8 @@ async def edit(msg, title, status, sts):
    text = TEXT.format(i.fetched, i.total_files, i.duplicate, i.deleted, i.skip, status, percentage, estimated_total_time, progress)
    if status in ["cancelled", "completed"]:
       button.append(
-         [InlineKeyboardButton('📢 Updates', url='https://t.me/Madflix_Bots'),
-         InlineKeyboardButton('💬 Support', url='https://t.me/MadflixBots_Support')]
+         [InlineKeyboardButton('🙂 OWNER', url='https://t.me/About_BEN'),
+         InlineKeyboardButton('🌚DEV', url='https://t.me/About_BEN')]
          )
    else:
       button.append([InlineKeyboardButton('✖️ Cancel ✖️', 'terminate_frwd')])
@@ -321,15 +312,3 @@ async def close(bot, update):
     await update.answer()
     await update.message.delete()
     await update.message.reply_to_message.delete()
-
-
-
-
-
-
-
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
