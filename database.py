@@ -176,7 +176,7 @@ class Database:
     async def get_all_frwd(self):
        return self.nfy.find({})
      
-db = Database(Config.DB_URL, Config.DB_NAME)
+db = Database(Config.DB_URL, Config.DATABASE_NAME)
 
 
 
